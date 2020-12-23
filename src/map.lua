@@ -6,7 +6,7 @@ module("luci.controller.map", package.seeall)
 function index()
 	local page
 
-	page = entry({"admin", "status", "map"}, template("map/index"), _("Network Map"), 2)
+	page = entry({"admin", "status", "map"}, template("map/index"), _("网络拓扑"), 2)
 	page.dependent = true
 
 	entry({"admin", "status", "map", "status"}, call("act_status")).leaf = true
